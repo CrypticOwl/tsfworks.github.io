@@ -2,7 +2,9 @@ html {
 	height: 100%;
 }
 body {
-	box-shadow: inset 0 0 6pc hsla(0, 0%, 0%, 0.2);
+	-webkit-box-shadow: inset 0 0 6pc hsla(0, 0%, 0%, 0.4);
+	-moz-box-shadow: inset 0 0 6pc hsla(0, 0%, 0%, 0.4);
+	box-shadow: inset 0 0 6pc hsla(0, 0%, 0%, 0.4);
 	height: 100%;
 	
 	font-family: "lato", sans-serif;
