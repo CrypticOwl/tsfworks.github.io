@@ -1,24 +1,16 @@
 body {
 	box-shadow: inset 0 0 6pc hsla(0, 0%, 0%, 0.2);
-	height: 100vh;
+	min-height: 100vh;
 
 	font-family: "lato", sans-serif;
 }
 
-/* .nav-bar {
-	position: absolute;
-	bottom: 3pc;
-	right: 3pc;
-
-	width: 70pc;
-	outline: 1px solid gold;
-} */
 .centerize {
 	position: relative;
 	max-width: 50pc;
 	margin: 0 auto;
 
-	height: 100vh;
+	height: 100%;
 }
 .tsf-nav {
 	position: absolute;
