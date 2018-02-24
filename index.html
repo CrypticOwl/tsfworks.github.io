@@ -7,12 +7,20 @@
 	<link rel="stylesheet" href="lib/normalize.min.css" media="async" onload="this.media='all'">
 	<link rel="stylesheet" href="styles/main.css" media="async" onload="this.media='all'">
 
-	<script async type="text/javascript" src="scripts/main.js"></script>
+	<script defer src="scripts/main.js"></script>
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+	<script type="text/javascript">
+		document.getElementsByTagName("body")[0].style.opacity = 0;
+		window.onload = function() {
+			document.getElementsByTagName("body")[0].style.transition = "opacity 300ms ease";
+			document.getElementsByTagName("body")[0].style.opacity = 1;
+		};
+	</script>
+
 	<div class="centerize">
 		<nav class="tsf-nav">
 			<img class="logo" src="resources/logo_256.png">
