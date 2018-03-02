@@ -8,6 +8,7 @@ html {
 }
 body {
 	height: 100%;
+	margin: 0;
 
 	-webkit-box-shadow: inset 0 0 6pc hsla(0, 0%, 0%, 0.4);
 	-moz-box-shadow: inset 0 0 6pc hsla(0, 0%, 0%, 0.4);
