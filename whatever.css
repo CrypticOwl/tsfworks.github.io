@@ -1,0 +1,140 @@
+body {
+	background: hsl(0, 0%, 95%);
+
+	max-width: 51.5pc; /* :( */
+	margin: 0 auto;
+
+	font-family: "open sans", sans-serif;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 0;
+}
+h1 {
+	font-weight: 300;
+	margin-bottom: 0;
+}
+h2 {
+	font-weight: 600;
+	margin-bottom: 0;
+}
+h3 {
+	font-weight: 400;
+	margin-bottom: 1em;
+}
+h4 {
+	font-weight: 600;
+	margin-bottom: 0.5em;
+}
+h5 {
+	text-transform: uppercase;
+	font-weight: 800;
+	margin-bottom: 1em;
+}
+h6 {
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-bottom: 0.5em;
+}
+
+
+header.white-box {
+	border-bottom: 1px solid black;
+	box-shadow: 0 2px 2px hsl(0, 0%, 70%);
+}
+
+.white-box {
+	padding: 1pc;
+	margin-bottom: 1em;
+	overflow-y: auto;
+	background: white;
+}
+
+.white-box .white-box {
+	border: 1px solid #DDD;
+	border-left: 4px solid #DDD;
+}
+
+
+.inline-box {
+	box-sizing: border-box;
+	float: left;
+	width: 33.3%;
+	vertical-align: top;
+	padding: 0 1em 1em 0;
+}
+
+
+
+
+body {
+	--accent-color: hsl(180, 60%, 40%);
+	--accent-color-active: hsl(180, 60%, 30%);
+	--main-color-disabled: hsl(0, 0%, 95%);
+	--main-color: hsl(0, 0%, 85%);
+	--main-color-active: hsl(0, 0%, 50%);
+}
+
+input {
+	border: none;
+	border-bottom: 2px solid var(--main-color);
+	background: transparent;
+
+	transition: border 100ms ease-in;
+}
+input:hover {
+	border-bottom: 2px solid var(--accent-color);
+}
+input:focus {
+	border-bottom: 2px solid var(--accent-color-active);
+}
+
+
+
+button {
+	color: var(--main-color);
+	background: none;
+	border: none;
+
+	font-weight: 700;
+	cursor: pointer;
+	transition: color 150ms ease-in-out;
+}
+button:hover {
+	color: var(--accent-color);
+}
+button:focus {
+	color: var(--accent-color-active);
+	outline: none;
+}
+
+
+
+table {
+	border-collapse: collapse;
+	border: 2px solid var(--main-color);
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+tr {
+	border-bottom: 1px solid var(--main-color-disabled);
+}
+td {
+	border: none;
+	border-right: 1px solid var(--main-color-disabled);
+	padding: 0.6em;
+	text-align: center;
+}
+tr:nth-of-type(5n) {
+	border-bottom: 2px solid var(--main-color-disabled);
+}
+tr:nth-of-type(10n) {
+	border-bottom: 2px solid var(--main-color);
+}
+td:nth-of-type(5n) {
+	border-right: 2px solid var(--main-color-disabled);
+}
+td:nth-of-type(10n) {
+	border-right: 2px solid var(--main-color);
+}

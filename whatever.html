@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Vue Test Live</title>
+	
+	<link rel="stylesheet" href="../lib/normalize.css">
+	<link rel="stylesheet" href="whatever.css">
+
+	<script type="text/javascript" src="../lib/vue.min.js"></script>
+</head>
+<body>
+	
+	<div id="vue-app"></div>
+	<script type="text/javascript" src="whatever.js"></script>
+	<script type="module">
+		import { foobar } from "./foo.js";
+		foobar.shout();
+	</script>
+	
+</body>
+</html>
