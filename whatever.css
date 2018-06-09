@@ -49,6 +49,8 @@ header.white-box {
 	margin-bottom: 1em;
 	overflow-y: auto;
 	background: white;
+
+	box-sizing: border-box;
 }
 
 .white-box .white-box {

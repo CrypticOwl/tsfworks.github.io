@@ -30,9 +30,14 @@ var stdComponents = {
 						buttonText: "Fullscreen"
 					}
 				},
+				computed: {
+					targetElement: function() {
+						return this.$el.closest(".white-box");
+					}
+				},
 				methods: {
 					toggleFullscreen: function() {
-						var el = this.$parent.$el;
+						var el = this.targetElement;
 						if (document.fullscreenElement) {
 							document.exitFullscreen();
 						} else {
@@ -44,13 +49,14 @@ var stdComponents = {
 					function fullscreenNotSupported() {
 						console.log("Error: Fullscreen not supported");
 					}
-					var el = this.$parent.$el;
+					var el = this.targetElement;
 					el.requestFullscreen = el.requestFullscreen || el.webkitRequestFullscreen || el.mozRequestFullScreen || el.msRequestFullscreen || fullscreenNotSupported;
 					document.exitFullscreen = document.exitFullscreen || document.webkitExitFullscreen || document.mozCancelFullScreen || document.msExitFullscreen || fullscreenNotSupported;
 
 					
-					// Polyfill: document.onfullscreenchange
 					if (document.onfullscreenchange === undefined) {
+
+						// Polyfill: document.onfullscreenchange
 						var dispatchFS = function() {
 							var eventFS = new CustomEvent("onfullscreenchange");
 							document.dispatchEvent(eventFS);
@@ -73,8 +79,12 @@ var stdComponents = {
 					document.addEventListener("onfullscreenchange", function() {
 						if (document.fullscreenElement) {
 							self.buttonText = "Exit Fullscreen";
+							self.targetElement.style.width = "100%";
+							self.targetElement.style.height = "100%";
 						} else {
 							self.buttonText = "Fullscreen";
+							self.targetElement.style.width = "auto";
+							self.targetElement.style.height = "auto";
 						}
 					});
 
