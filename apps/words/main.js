@@ -1,12 +1,12 @@
 "use strict";
 
-import WordSearch from '/app/WordSearch.js'
-import LazyList from '/app/LazyList.js'
-import ResourceSelector from '/app/ResourceSelector.js'
+import WordSearch from './app/WordSearch.js'
+import LazyList from './app/LazyList.js'
+import ResourceSelector from './app/ResourceSelector.js'
 
-import WhatToDo from '/app/WhatToDo.js'
+import WhatToDo from './app/WhatToDo.js'
 
-import FullscreenButton from '/lib/FullscreenButton.js'
+import FullscreenButton from './lib/FullscreenButton.js'
 
 
 new Vue({
