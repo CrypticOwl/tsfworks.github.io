@@ -32,7 +32,7 @@ const ResourceSelector = {
 	},
 	methods: {
 		loadResource() {
-			var url = `/assets/${this.selected}`
+			var url = `./assets/${this.selected}`
 			this.status = 'Fetching...'
 
 			// Fetch data then add it to this.assetData
