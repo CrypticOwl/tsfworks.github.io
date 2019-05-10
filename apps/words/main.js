@@ -14,7 +14,7 @@ new Vue({
 	template: `
 		<div>
 
-			<div class='white-box'>
+			<div class='white-box' style='height: 5em'>
 				<header>
 					<h2>What to do?</h2>
 					<FullscreenButton/>
