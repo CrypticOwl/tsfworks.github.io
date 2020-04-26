@@ -1,0 +1,44 @@
+
+/* INPUT: SELECT FROM SOMEWHERE */
+
+input[type=color] {
+	display: inline-block;
+	border: 1px solid var(--main-color);
+	background: none;
+	font-size: inherit;
+
+	padding: 0.3em;
+	margin: 0 0.5em 0.3em 0;
+
+	transition: all 150ms ease-in-out;
+}
+input[type=color]:hover {
+	border: 1px solid var(--accent-color);
+}
+input[type=color]:active {
+	border: 1px solid var(--accent-color);
+}
+input[type=color]:focus {
+	border: 1px solid var(--accent-color);
+}
+
+
+
+label > input[type=file] {
+	/*https://tympanus.net/codrops/2015/09/15/styling-customizing-file-inputs-smart-way/*/
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+/*label > input[type=file] + span {
+	border: 1px solid var(--main-color);
+	padding: 0.4em 0.6em;
+	margin: 0 0.5em 0.3em 0;
+}
+label > input[type=file] + span::after {
+	content: "Choose file";
+}*/
+

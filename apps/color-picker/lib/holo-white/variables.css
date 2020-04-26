@@ -1,0 +1,74 @@
+
+/* Variables */
+
+:root {
+
+
+	/* 
+	 * COLOR HIERARCHY
+	 * 	L1 - Immediate attention 
+	 * 		(??)
+	 * 	L2 - First focus 
+	 * 		(eg. when user first loads page; should have only one/two of this)
+	 * 	L3 - Supporting focus content / Peripheral vision
+	 * 	L4 - Can be removed without affecting function
+	 */
+
+	--main-color-active: hsl(0, 0%, 50%);
+	--main-color: hsl(0, 0%, 80%);
+	--main-color-disabled: hsl(0, 0%, 95%);
+	--main-background: white;
+
+
+	/* L1 */
+	--accent-color: hsl(180, 60%, 40%);
+	--accent-color-light: hsl(180, 70%, 80%);
+	--accent-color-active: hsl(180, 60%, 50%);
+
+	--success-color: hsl(90, 45%, 52%);
+	--warning-color: hsl(45, 60%, 55%);
+	--danger-color: hsl(0, 70%, 50%);
+
+
+
+
+
+
+
+
+	--box-shadow-hover:
+		0 5px 10px -3px hsla(0, 0%, 0%, .2), /* ambient shadow */
+		0 6px 6px -8px hsla(0, 0%, 0%, .2); /* cast shadow */
+	--box-shadow-focus:
+		0 4px 25px -6px hsla(0, 0%, 0%, .2), 
+		0 12px 8px -10px hsla(0, 0%, 0%, .5);
+
+	--box-shadow-hover:
+		0 4.4px 4.7px -5.3px hsla(0, 0%, 0%, 0.21),
+		0 2.2px 8.8px -1.1px hsla(0, 0%, 0%, 0.04);
+	--box-shadow-focus:
+		0 7.8px 5.5px -7.8px hsla(0, 0%, 0%, 0.31),
+		0 3.9px 15.6px -1.9px hsla(0, 0%, 0%, 0.06);
+}
+
+:root {
+
+
+/*	--line-L1: hsl(0, 0%, 85%);
+	--border-L1: 1px solid var(--line-L1);
+
+	--line-L2: hsla(0, 0%, 0%, 0.5);
+	--color-L2: hsla(0, 0%, 0%, 0.7);
+	--border-L2: 1px solid var(--line-L2);
+
+	--background-L2: white;
+
+	--shadow-L2: 
+		0 0 10px hsla(0, 0%, 0%, 0.1),
+		0 4px 2px -3px hsla(0, 0%, 0%, 0.3);
+	--border-L3: 1px solid hsl(0, 0%, 85%);
+	--color-L3: hsl(0, 0%, 70%);
+
+	--color-L4: hsl(0, 0%, 65%);
+	--border-L4: 1px solid hsl(0, 0%, 90%);*/
+}

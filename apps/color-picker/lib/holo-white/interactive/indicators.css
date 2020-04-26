@@ -1,0 +1,108 @@
+
+/* INDICATORS */
+
+
+
+/* https://css-tricks.com/html5-meter-element/ */
+meter {
+	/*-webkit-appearance: none; */
+	/* Chrome: possible bug, will disable custom CSS when enabled. see https://stackoverflow.com/questions/38891254/meter-not-working-properly-in-chrome*/
+	-moz-appearance: none;
+	appearance: none;
+
+	width: 20ch;
+	height: 3px;
+	margin: calc((1em - 4px) / 2) 0;
+
+	/* <meter> container: Firefox; */
+	background: var(--main-color-disabled);
+}
+::-webkit-meter-bar {
+	/* <meter> container: Chrome; */
+	background: var(--main-color-disabled);
+}
+
+/* When value is at the same segment as the 'optimum' value */
+:-moz-meter-optimum::-moz-meter-bar {
+	background: var(--accent-color);
+}
+::-webkit-meter-optimum-value {
+	background: var(--accent-color);
+}
+
+/* When value is one segment away from the 'optimum' value */
+:-moz-meter-sub-optimum::-moz-meter-bar {
+	background: var(--warning-color);
+}
+::-webkit-meter-suboptimum-value {
+	background: var(--warning-color);
+}
+
+/* When value is two segments from the 'optimum' value */
+:-moz-meter-sub-sub-optimum::-moz-meter-bar {
+	background: var(--danger-color);
+}
+::-webkit-meter-even-less-good-value {
+	background: var(--danger-color);
+}
+
+
+
+
+progress {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border: none;
+
+	width: 20ch;
+	height: 3px;
+	margin: calc((1em - 4px) / 2) 0;
+	vertical-align: middle;
+}
+
+/* <progress> container */
+progress {
+	background: var(--main-color-disabled);
+}
+progress::-webkit-progress-bar {
+	/* Chrome: <progress> container */
+	background: var(--main-color-disabled)
+}
+
+/* <progress> filled value */
+progress[value]::-moz-progress-bar {
+	background: var(--accent-color);
+}
+progress[value]::-webkit-progress-value {
+	background: var(--accent-color);
+}
+
+/* <progress> indeterminate */
+progress:not([value]) {
+   background: repeating-linear-gradient(
+   	150deg, 
+   	var(--accent-color), var(--accent-color) 1ch, 
+   	var(--main-color) 1ch, var(--main-color) 2ch
+   );
+   animation: progress-indeterminate 300ms linear infinite;
+}
+progress:not([value])::-moz-progress-bar {
+	background: none;
+}
+progress:not([value])::-webkit-progress-bar {
+   background: repeating-linear-gradient(
+   	150deg, 
+   	var(--accent-color), var(--accent-color) 1ch, 
+   	var(--main-color) 1ch, var(--main-color) 2ch
+   );
+	-webkit-animation: progress-indeterminate 300ms linear infinite;
+	animation: progress-indeterminate 300ms linear infinite;
+}
+@-webkit-keyframes progress-indeterminate {
+	100% { background-position: -4ch 0; }
+}
+@keyframes progress-indeterminate {
+	100% { background-position: -4ch 0; }
+}
+

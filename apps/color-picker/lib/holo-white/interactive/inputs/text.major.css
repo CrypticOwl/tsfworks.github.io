@@ -1,0 +1,154 @@
+
+/* INPUT: TEXT */
+
+/* For all elements */
+input[type=text],
+input[type=date],
+input[type=datetime-local],
+input[type=month],
+input[type=time],
+input[type=week],
+input[type=number],
+input[type=email],
+input[type=search],
+input[type=tel],
+input[type=url],
+input[type=password],
+textarea {
+	background: white;
+	border: 1px solid var(--main-color);
+	caret-color: var(--accent-color);
+
+	padding: 0.4em 0.6em;
+	margin: 0 0.5em 0.3em 0;
+
+	transition: all 100ms ease-out;
+}
+
+
+input[type=text]:disabled,
+input[type=date]:disabled,
+input[type=datetime-local]:disabled,
+input[type=month]:disabled,
+input[type=time]:disabled,
+input[type=week]:disabled,
+input[type=number]:disabled,
+input[type=email]:disabled,
+input[type=search]:disabled,
+input[type=tel]:disabled,
+input[type=url]:disabled,
+input[type=password]:disabled,
+textarea:disabled {
+	cursor: not-allowed;
+	border: 1px solid var(--main-color-disabled);
+	background: var(--main-color-disabled);
+}
+
+input[type=text]:enabled:hover,
+input[type=date]:enabled:hover,
+input[type=datetime-local]:enabled:hover,
+input[type=month]:enabled:hover,
+input[type=time]:enabled:hover,
+input[type=week]:enabled:hover,
+input[type=number]:enabled:hover,
+input[type=email]:enabled:hover,
+input[type=search]:enabled:hover,
+input[type=tel]:enabled:hover,
+input[type=url]:enabled:hover,
+input[type=password]:enabled:hover,
+textarea:enabled:hover {
+	border: 1px solid var(--main-color-active);
+	box-shadow: var(--box-shadow-hover);
+}
+input[type=text]:enabled:focus,
+input[type=date]:enabled:focus,
+input[type=datetime-local]:enabled:focus,
+input[type=month]:enabled:focus,
+input[type=time]:enabled:focus,
+input[type=week]:enabled:focus,
+input[type=number]:enabled:focus,
+input[type=email]:enabled:focus,
+input[type=search]:enabled:focus,
+input[type=tel]:enabled:focus,
+input[type=url]:enabled:focus,
+input[type=password]:enabled:focus,
+textarea:enabled:focus {
+	color: var(--accent-color);
+	border: 1px solid var(--accent-color);
+	box-shadow: var(--box-shadow-focus);
+
+	outline: none;
+}
+input[type=text]::placeholder,
+input[type=date]::placeholder,
+input[type=datetime-local]::placeholder,
+input[type=month]::placeholder,
+input[type=time]::placeholder,
+input[type=week]::placeholder,
+input[type=number]::placeholder,
+input[type=email]::placeholder,
+input[type=search]::placeholder,
+input[type=tel]::placeholder,
+input[type=url]::placeholder,
+input[type=password]::placeholder,
+textarea::placeholder {
+	opacity: 0.5;
+}
+input[type=text]:hover::placeholder,
+input[type=date]:hover::placeholder,
+input[type=datetime-local]:hover::placeholder,
+input[type=month]:hover::placeholder,
+input[type=time]:hover::placeholder,
+input[type=week]:hover::placeholder,
+input[type=number]:hover::placeholder,
+input[type=email]:hover::placeholder,
+input[type=search]:hover::placeholder,
+input[type=tel]:hover::placeholder,
+input[type=url]:hover::placeholder,
+input[type=password]:hover::placeholder,
+textarea:hover::placeholder {
+	opacity: 0.7;
+}
+input[type=text]:focus::placeholder,
+input[type=date]:focus::placeholder,
+input[type=datetime-local]:focus::placeholder,
+input[type=month]:focus::placeholder,
+input[type=time]:focus::placeholder,
+input[type=week]:focus::placeholder,
+input[type=number]:focus::placeholder,
+input[type=email]:focus::placeholder,
+input[type=search]:focus::placeholder,
+input[type=tel]:focus::placeholder,
+input[type=url]:focus::placeholder,
+input[type=password]:focus::placeholder,
+textarea:focus::placeholder {
+	opacity: 0.3;
+	color: var(--accent-color);
+}
+
+input[type=text]:invalid,
+input[type=date]:invalid,
+input[type=datetime-local]:invalid,
+input[type=month]:invalid,
+input[type=time]:invalid,
+input[type=week]:invalid,
+input[type=number]:invalid,
+input[type=email]:invalid,
+input[type=search]:invalid,
+input[type=tel]:invalid,
+input[type=url]:invalid,
+input[type=password]:invalid,
+textarea:invalid {
+	border: 1px solid var(--warning-color);
+}
+
+
+
+
+
+/* Special styles for individual elements */
+textarea {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+}

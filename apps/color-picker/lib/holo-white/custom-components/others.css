@@ -1,0 +1,41 @@
+
+
+.info-box {
+	background: green;
+}
+
+
+
+
+.chip {
+	display: inline-block;
+
+	margin: 0 0 0.2em 0;
+	padding: 0.3em 0.5em;
+	border: 1px solid transparent;
+	font-size: 8pt;
+	font-weight: bold;
+
+	cursor: default;
+
+	transition: all 100ms ease-in;
+}
+.chip:hover {
+	border: 1px solid var(--accent-color-active);
+	box-shadow: var(--box-shadow-hover);
+}
+
+.chip span {
+	display: inline-block;
+}
+
+.chip-index {
+	color: #CCC;
+	font-weight: bold;
+
+	transition: color 100ms ease-in;
+}
+.chip:hover .chip-index {
+	color: var(--accent-color-active);
+}
+

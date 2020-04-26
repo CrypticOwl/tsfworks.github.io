@@ -1,0 +1,53 @@
+
+@import url('./inputs/buttons.css');
+@import url('./inputs/buttons.classes.css');
+@import url('./inputs/multiple-choice.css');
+@import url('./inputs/range.css');
+@import url('./inputs/select-from-somewhere.css');
+@import url('./inputs/text.css');
+/*@import url('./inputs/text.classes.css');*/
+
+
+
+fieldset {
+	/*border-color: hsl(0, 0%, 90%);*/
+	border: none;
+	padding: 0;
+	margin: 0.5em 0;
+	/*background: lightyellow;*/
+}
+
+fieldset > legend {
+	/*outline: 1px solid red;*/
+	/*background: lightblue;*/
+	margin: 0.5em 0 0.5em 0;
+	font-weight: 800;
+	font-size: 0.8em;
+	text-transform: uppercase;
+	text-decoration-color: red;
+}
+
+
+
+label {
+	display: inline-block;
+
+	margin: 0.2em 0.5em 0.2em 0;
+}
+
+label span:first-child:not(:last-child) {
+	display: inline-block;
+	margin-right: 0.6ch;
+	text-align: right;
+
+	min-width: 10ch;
+	/*color: var(--main-color-active);*/
+	color: #444;
+	font-weight: bold;
+}
+
+input:not(type=button) {
+	width: 20ch;
+	background: green;
+	outline: 1px solid green;
+}

@@ -1,0 +1,53 @@
+
+/* MAIN */
+@import url('./variables.css');
+
+/* STATIC */
+@import url('./static/content-sectioning.css');
+@import url('./static/inline.css');
+@import url('./static/text-content.css');
+@import url('./static/list.css');
+@import url('./static/table.css');
+
+/* INTERACTIVE */
+@import url('./interactive/image-and-multimedia.css');
+@import url('./interactive/indicators.css');
+@import url('./interactive/inputs.css');
+
+/* CUSTOM COMPONENTS */
+@import url('./custom-components/white-box.css');
+
+
+
+
+body {
+	background: hsl(0, 0%, 95%);
+	max-width: 700px;
+	margin: 0 auto;
+
+	font-size: 0.8125rem; /* 14px. Browser typical :root font-size is 16px */
+	font-family: "arial", sans-serif;
+	line-height: 1.4;
+
+	transition: margin 50ms ease-in;
+}
+
+@media (min-width: 750px) {
+	body {
+		margin-top: 0.8em;
+	}
+}
+
+::-moz-selection {
+	background: var(--accent-color-light);
+}
+::selection {
+	background: var(--accent-color-light);
+}
+
+
+
+
+
+
+

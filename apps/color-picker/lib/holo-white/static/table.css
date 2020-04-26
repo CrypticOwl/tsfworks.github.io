@@ -1,0 +1,39 @@
+table {
+	/*outline: 1px solid lightgreen;*/
+	border-collapse: collapse;
+	/*border-spacing: 0;*/
+	margin: 0 0 1.4em;
+
+	color: hsl(0, 0%, 30%);
+}
+
+/* All cells */
+td, th {
+	text-align: left;
+	padding: 0.3em 0.6em;
+
+	border: 1px solid transparent;
+	box-sizing: content-box;
+}
+
+/* Header cells: left*/
+th:first-child {
+	/*border-right: 1px solid var(--main-color);*/
+}
+
+/* Header cells: top */
+thead td,
+thead th,
+tr th:not(:first-child) {
+	border-bottom: 1px solid var(--main-color);
+}
+
+
+th {
+}
+
+tr:hover {
+	color: black;
+	/*outline: 1px dashed var(--main-color);*/
+	/*background: red;*/
+}

@@ -1,0 +1,49 @@
+
+/* INPUT: BUTTON */
+
+button,
+input[type=button],
+input[type=submit],
+input[type=reset] {
+	display: inline-block;
+	outline: none;
+	border: 1px solid #CCC;
+	padding: 0.4em 0.6em;
+	margin: 0 0.6em 0.6em 0;
+	background-color: transparent;
+	color: inherit;
+}
+button:enabled:hover,
+input[type=button]:enabled:hover,
+input[type=submit]:enabled:hover,
+input[type=reset]:enabled:hover {
+	border: 1px solid hsl(0, 0%, 70%);
+	box-shadow: var(--box-shadow-hover);
+}
+button:enabled:active,
+input[type=button]:enabled:active,
+input[type=submit]:enabled:active,
+input[type=reset]:enabled:active {
+	border: 1px solid hsl(0, 0%, 70%);
+	box-shadow: none;
+	color: #222;
+}
+
+button:enabled:focus,
+input[type=button]:enabled:focus,
+input[type=submit]:enabled:focus,
+input[type=reset]:enabled:focus {
+	outline: none;
+	box-shadow: var(--box-shadow-hover);
+}
+
+
+button:disabled,
+input[type=button]:disabled,
+input[type=submit]:disabled,
+input[type=reset]:disabled {
+	background: transparent;
+	color: #BBB;
+	cursor: not-allowed;
+}
+

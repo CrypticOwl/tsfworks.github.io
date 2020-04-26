@@ -1,0 +1,21 @@
+
+header.white-box {
+	border-bottom: 1px solid black;
+	box-shadow: 0 2px 2px hsl(0, 0%, 70%);
+}
+
+.white-box {
+	padding: 1pc;
+	margin-bottom: 1em;
+	overflow-y: auto;
+	background: white;
+}
+
+.white-box .white-box {
+	border: 1px solid #DDD;
+	border-left: 4px solid #DDD;
+}
+
+.white-box .white-box .white-box {
+	border: 1px dashed #DDD;
+}

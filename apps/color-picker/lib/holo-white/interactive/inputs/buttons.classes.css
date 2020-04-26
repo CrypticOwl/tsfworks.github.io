@@ -1,0 +1,58 @@
+
+/* INPUT: BUTTON: CUSTOM CLASSES*/
+
+button.plain,
+input[type=button].plain,
+input[type=submit].plain,
+input[type=reset].plain {
+	border: none;
+	box-shadow: none;
+	/*padding-left: 0;
+	padding-right: 0;*/
+	margin: 0;
+
+	color: var(--main-color-active);
+	transition: color 80ms ease-out;
+}
+button.plain:enabled:hover,
+input[type=button].plain:enabled:hover,
+input[type=submit].plain:enabled:hover,
+input[type=reset].plain:enabled:hover {
+	border: none;
+	box-shadow: none;
+
+	color: var(--accent-color);
+}
+button.plain:enabled:active,
+input[type=button].plain:enabled:active,
+input[type=submit].plain:enabled:active,
+input[type=reset].plain:enabled:active {
+	box-shadow: none;
+
+	color: var(--accent-color-active);
+}
+
+button.plain:enabled:focus,
+input[type=button].plain:enabled:focus,
+input[type=submit].plain:enabled:focus,
+input[type=reset].plain:enabled:focus {
+	box-shadow: none;
+
+	color: var(--accent-color-active);
+}
+
+
+button.plain:disabled,
+input[type=button].plain:disabled,
+input[type=submit].plain:disabled,
+input[type=reset].plain:disabled {
+	box-shadow: none;
+
+	color: var(--main-color-disabled);
+}
+
+button > .button-icon {
+	display: inline-block;
+	vertical-align: middle;
+	height: 1em;
+}

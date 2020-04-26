@@ -1,0 +1,35 @@
+
+
+abbr {
+	cursor: help;
+}
+
+a {
+	color: inherit;
+	font-weight: 700;
+
+	transition: color 100ms ease-in-out;
+}
+a:hover {
+	color: var(--accent-color);
+}
+
+kbd {
+	padding: 0 0.5ch;
+	border: 1px solid var(--main-color);
+}
+
+mark {
+	padding: 0 0.5ch;
+	background: none;
+	border: 2px dotted var(--accent-color-active);
+}
+
+code,
+samp {
+	/*color: var(--main-color-active);*/
+	word-break: break-word;
+
+	padding: 0 0.5ch;
+	border: 1px dotted var(--main-color-active);
+}
